@@ -6,7 +6,7 @@ A docker image for the smileycoin wallet.
 
 Start by downloading the image
 
-    docker pull ingimarsson/smileycoin-docker
+    docker pull ingimarsson/smileycoin
 
 It is recommended to create a named volume for wallet data
 
@@ -37,7 +37,7 @@ Verify that the container is running by running `docker ps`
 
     docker ps
     CONTAINER ID        IMAGE                           COMMAND                
-    37e53da32617        ingimarsson/smileycoin-docker   "/entrypoint.sh smil…" 
+    37e53da32617        ingimarsson/smileycoin          "/entrypoint.sh smil…" 
 
 Now we can interact with the wallet
 

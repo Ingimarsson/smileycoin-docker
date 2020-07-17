@@ -15,23 +15,23 @@ It is recommended to create a named volume for wallet data
 Now the wallet can be started but it will complain about missing
 configuration
 
-    docker run ingimarsson/smileycoin-docker
+    docker run ingimarsson/smileycoin
 
 The missing username and password can be added like this
 
     sudo docker run -v smileycoin_data:/data \
-        ingimarsson/smileycoin-docker \
+        ingimarsson/smileycoin \
         sh -c "echo rpcuser=smileycoinrpc >> /data/smileycoin.conf"
 
 Make sure to use a safe password
 
     sudo docker run -v smileycoin_data:/data \
-        ingimarsson/smileycoin-docker \
+        ingimarsson/smileycoin \
         sh -c "echo rpcpassword=smiley123 >> /data/smileycoin.conf"
 
 The wallet can then be started in detached mode with
 
-    docker run -v smileycoin_data:/data -d ingimarsson/smileycoin-docker
+    docker run -v smileycoin_data:/data -d ingimarsson/smileycoin
 
 Verify that the container is running by running `docker ps`
 
